@@ -1,0 +1,36 @@
+{
+  "name": "weather-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "echo 'Use a GitHub Actions workflow instead of manual deploy script'",
+    "build": "echo 'No build step for now'",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "jest": "^27.0.0"
+  },
+  "lint-staged": {
+    "*.{html,css}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
