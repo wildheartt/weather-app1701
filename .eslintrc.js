@@ -2,6 +2,7 @@ export default {
   env: {
     browser: true,
     es2021: true,
+    jest: true, 
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
@@ -10,10 +11,8 @@ export default {
   },
   settings: {
     react: {
-      version: "detect", // Автоматическое определение версии React
+      version: "detect",
     },
   },
-  rules: {
-    // Добавьте свои правила здесь
-  },
+  rules: {},
 };

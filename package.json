@@ -18,11 +18,13 @@
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-jest": "^28.11.0",
+    "eslint-plugin-react": "^7.37.4",
     "husky": "^8.0.0",
+    "jest": "^27.0.0",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.5.3",
-    "jest": "^27.0.0"
+    "prettier-plugin-tailwindcss": "^0.5.3"
   },
   "lint-staged": {
     "*.{html,css}": [
