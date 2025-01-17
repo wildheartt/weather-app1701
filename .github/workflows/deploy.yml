@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   deploy:
@@ -18,13 +18,9 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Build (if needed)
-        run: npm run build
-
+        run: npm insta
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src 
+          publish_dir: ./public # Убедитесь, что это правильная директория для публикации
