@@ -15,6 +15,8 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-html": "^7.1.0",
