@@ -16,12 +16,10 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "eslint": "^8.57.1",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-jest": "^28.11.0",
-    "eslint-plugin-react": "^7.37.4",
     "husky": "^8.0.0",
     "jest": "^27.0.0",
     "lint-staged": "^13.2.3",
@@ -36,5 +34,8 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.2.0"
   }
 }
