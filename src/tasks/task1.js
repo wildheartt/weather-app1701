@@ -1,3 +1,4 @@
+// Изменение для создания Pull Request
 
 function sum(a, b) {
   return a + b;
