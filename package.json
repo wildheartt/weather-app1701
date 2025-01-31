@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --ext js,jsx --fix && stylelint '**/*.css' --fix",
     "preview": "vite preview",
     "prettier": "prettier . --check --ignore-unknown",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,md}\"",
     "prettier:fix": "prettier . -w",
     "test": "jest"
   },
@@ -45,7 +46,7 @@
     "eslint-plugin-react-refresh": "^0.4.8",
     "globals": "^15.14.0",
     "lint-staged": "^15.4.3",
-    "prettier": "^3.3.2",
+    "prettier": "^3.4.2",
     "stylelint": "^16.14.1",
     "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.5.3",
