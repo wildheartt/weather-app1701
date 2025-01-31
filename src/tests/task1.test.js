@@ -1,3 +1,4 @@
+import { describe, test, expect } from "@jest/globals";
 import sum from "../tasks/task1.js";
 
 describe("sum function tests", () => {
