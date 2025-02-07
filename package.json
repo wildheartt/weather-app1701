@@ -4,37 +4,49 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://wildheartt.github.io/weather-app1701/",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "format": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "echo 'Use a GitHub Actions workflow instead of manual deploy script'",
-    "build": "echo 'No build step for now'",
-    "prepare": "husky install",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-jest": "^28.11.0",
-    "eslint-plugin-react": "^7.37.4",
-    "husky": "^8.0.0",
-    "jest": "^27.0.0",
-    "lint-staged": "^13.2.3",
-    "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.5.3"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true npx eslint . --report-unused-disable-directives --max-warnings 0 && stylelint '**/*.css' --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix && stylelint '**/*.css' --fix",
+    "preview": "vite preview",
+    "prettier": "prettier . --check --ignore-unknown",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+    "prettier:fix": "prettier . -w",
+    "test": "jest",
+    "knip": "knip"
   },
   "lint-staged": {
-    "*.{html,css}": [
-      "prettier --write"
-    ],
     "*.{js,jsx}": [
       "eslint --fix",
       "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.7",
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^22.13.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "gh-pages": "^6.3.0",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "knip": "^5.43.6",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^36.0.1",
+    "vite": "^5.3.3"
+  },
+  "overrides": {},
+  "volta": {
+    "node": "22.1.0"
   }
 }

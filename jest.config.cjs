@@ -1,9 +1,9 @@
 module.exports = {
   transform: {
-    "^.+\\.jsx?$": "babel-jest",
+    '^.+\\.jsx?$': 'babel-jest',
   },
   globals: {
-    "babel-jest": {
+    'babel-jest': {
       useESM: true,
     },
   },
